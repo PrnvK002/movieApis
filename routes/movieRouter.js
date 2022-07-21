@@ -1,6 +1,5 @@
 import { Router } from "express";
-import { route } from "express/lib/router";
-import authenticationMiddleware from "../middlewares/authenticationMiddleware";
+import authenticationMiddleware from "../middlewares/authenticationMiddleware.js";
 import { authUser , getCastMovies , getMovies , getTopMovies } from '../controllers/movieController.js';
 
 const router = Router();
